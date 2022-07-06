@@ -1,0 +1,11 @@
+/*Tablet*/
+@media (max-width:700px) {
+    section.menu nav ul.menu__list{
+       display: column;
+       flex-direction: column;
+    }
+    ul.redes{
+        display:column;
+    }
+
+}

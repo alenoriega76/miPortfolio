@@ -1,0 +1,493 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root {
+  /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+  /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+  --cor-de-fundo: #f5f5f5;
+  --cor-de-link: #000;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-de-fundo);
+  font-family: "Raleway";
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/*Sección Menu*/
+
+section.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-end;
+  height: 10vh;
+  margin: 0px 153px;
+}
+header.menu__header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+}
+section.menu nav ul.menu__list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  width: 750px;
+}
+section.menu nav ul.menu__list li:hover {
+  color: #2a7ae4;
+  text-decoration: underline;
+}
+section.menu nav ul.menu__list li:nth-child(6) {
+  color: black;
+  font-weight: 800;
+}
+/*Sección Title*/
+
+section.title {
+  margin: 0 153px;
+  width: 80%;
+  color: rgb(62, 65, 65);
+  margin-top: 10vh;
+}
+
+section.title div.title__div {
+  justify-content: space-around;
+  align-content: flex-start;
+  display: flex;
+  flex-direction: row-reverse;
+}
+section.title .title__profile div.title__container h2 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 61px;
+  margin-top: 20px;
+}
+
+section.title div.title__div img.title__profile {
+  width: 368px;
+  border-radius: 50%;
+}
+
+section .title div.title__div div.title__container h3 {
+  font-size: 17px;
+  line-height: 23px;
+  width: 600px;
+  margin-bottom: 30px;
+}
+.redes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  width: 500px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  margin-top: 60px;
+}
+.redes li.title__network__item:hover {
+  text-decoration: underline;
+}
+/*Sección About*/
+
+section.about {
+  padding: 62px 153px;
+  background-color: #cce0ec;
+}
+section .about div.about__container {
+  width: 700px;
+}
+section.about h3.about__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+section .about div.about__container p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+section .skills #skills {
+  padding: 0px 64px;
+}
+section.skills h3 {
+  font-size: 32px;
+  text-align: center;
+}
+section.skills .skills__line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+section.skills div.skills__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 16px;
+  background-color: #fff;
+  margin: 22px 15px 22px 0px;
+  width: 160px;
+  height: 160px;
+}
+section.skills div.skills__box ul {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgb(92, 90, 90);
+}
+/*Sección Hobbies*/
+section.hobbies {
+  padding: 0px 64px;
+}
+
+section.hobbies h3 {
+  font-size: 32px;
+  text-align: center;
+}
+section.hobbies .hobbies__line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section.hobbies div.hobbies__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 16px;
+  background-color: #fff;
+  margin: 22px 15px 22px 0px;
+  width: 160px;
+  height: 160px;
+}
+section.hobbies div.hobbies__box ul {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgb(92, 90, 90);
+}
+/* Experiencia Académica*/
+
+section.academic {
+  padding: 0 px 64px;
+  background-color: rgb(204, 234, 252);
+}
+section.academic h2 {
+  font-size: 32px;
+  text-align: center;
+}
+section.academic div.academic__courses {
+  display: flex;
+  justify-content: space-around;
+}
+section.academic div.academic__courses div.academic__box {
+  width: 20.6rem;
+  margin: 0 1rem;
+}
+section.academic div.academic__courses__box ul {
+  margin: 32px;
+  padding: 0;
+}
+section.academic div.academic__courses__box ul.academic__courses__list li {
+  padding: 0px;
+  margin: 32px;
+}
+section .academic ul.academic__courses__list li {
+  line-height: 0.5rem;
+}
+section.academic li.academic__courses__item__img {
+  background-color: #fff;
+  padding: 5%;
+  width: 335px;
+  height: 190px;
+  text-align: center;
+  border-radius: 10px;
+}
+section.academic li img#poli {
+  width: 120px;
+  height: 120px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* experiencia*/
+section.experience #xp {
+  display: flex;
+  padding: 0px 64px;
+}
+.experience__info-container {
+  flex-direction: column;
+  align-items: flex-end;
+}
+.experience__description {
+  display: flex;
+  gap: 1rem;
+}
+.experience h2.experience__section__title {
+  font-size: 32px;
+  text-align: center;
+}
+.experience div.experience div.experience__box1 {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  flex-direction: row-reverse;
+}
+.experience__box2 {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 10px;
+}
+.experience__box2 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 400px;
+  flex-direction: row-reverse;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.experience__box1 {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 400px;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 10px;
+}
+div.block img.experience__img {
+  display: flex;
+  width: 752px;
+  height: 406px;
+  justify-content: space-between;
+  align-items: center;
+}
+.experience__info-container {
+  display: column;
+  flex-direction: flex-end;
+  justify-content: space-between;
+  margin-left: 10%;
+}
+.experience div.experience__info h2.experience__title {
+  display: flex;
+  justify-content: space-between;
+}
+.experience div.experience__info h3.experience__text {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.experience div.experience__description span.experience__repo button {
+  background-color: #fdfdfd;
+  color: rgb(27, 28, 29);
+  padding: 15px 25px;
+  border: none;
+  width: 156px;
+  height: 46px;
+  display: flex;
+  border: 1px solid#2A7AE4;
+  gap: 3px;
+}
+.experience div.experience__description span.experience__repo button:hover {
+  transform: scale(1.2);
+}
+
+.experience div.experience__description span.experience__demo button {
+  background-color: #2a7ae4;
+  color: rgb(27, 28, 29);
+  padding: 15px 25px;
+  border: none;
+  width: 156px;
+  height: 46px;
+  display: inline-flex;
+}
+.experience div.experience__description span.experience__demo button:hover {
+  transform: scale(1.2);
+}
+
+/*Contacto*/
+
+section .experience {
+  padding: 0px 64px;
+  display: flex;
+  align-items: center;
+}
+section.formcontato div.formcontato__contacto {
+  width: 100%;
+  margin: 25px 0px 25px 0px;
+  padding: 0 15px;
+  background: url(./assets/contact_image.png) no-repeat center;
+  display: flex;
+  width: 700px;
+  gap: 1rem;
+  align-items: center;
+}
+
+section.formcontato div.formcontato__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+}
+section.formcontato div.formcontato__text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 15px;
+  margin-left: 580px;
+  display: flex;
+}
+section.formcontato div.formcontato__text h3.formcontato__subtext {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  margin-left: 580px;
+  display: flex;
+}
+section.formcontato div.formcontato__text form.formcontato__form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 580px;
+}
+section .formcontato__form input.formcontato__input {
+  padding: 15px 32px;
+  margin: 10px auto;
+  width: 556px;
+  height: 16px;
+  border: none;
+}
+section .formcontato__form input.formcontato__input:hover {
+  border: none;
+  border-bottom: 4px solid lightskyblue;
+}
+section .formcontato__form textarea.formcontato__textarea {
+  padding: 15px 32px;
+  margin: 10px auto;
+  width: 556px;
+  height: 133px;
+  border: none;
+}
+
+section.formcontato div.formcontato__text form.formcontato__form button {
+  background-color: #2a7ae4;
+  border: none;
+  color: #e8eaeb;
+  padding: 15px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 135px;
+  height: 46px;
+  
+  align-items: center;
+}
+section.formcontato div.formcontato__text form.formcontato__form button:hover {
+  background-color: #aab0b3;
+  color: #1c1e1f;
+  transform: scale(1.1);
+}
+
+/*footeer*/
+
+section.footer {
+  width: 100%;
+  height: 100%;
+}
+section.footer div.footer__rodape {
+  text-align: center;
+  color: #fdfdfd;
+  background-color: #4d5458;
+  align-items: center;
+}
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: relative;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+  
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+.loader{
+    background-color: lightslategray;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000000;
+    clip-path: circle(150% at 100% 0%);
+    transition: clip-path 3.8s ease-in-out;
+}
+.loader2{
+    clip-path: circle(0% at 100% 0%);
+}
